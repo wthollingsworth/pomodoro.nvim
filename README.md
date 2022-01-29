@@ -19,7 +19,7 @@ Install the plugin with your preferred package manager.
 ### [packer](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {
-    'drwhattheheck/pomodoro.nvim',
+    'wthollingsworth/pomodoro.nvim',
     requires = 'MunifTanjim/nui.nvim'
 }
 ```
@@ -30,7 +30,7 @@ You can configure the length of the pomodoro, the length of a short break, the l
 ### Lua
 ```lua
 use {
-    'drwhatheheck/pomodoro.nvim',
+    'wthollingsworth/pomodoro.nvim',
     requires = 'MunifTanjim/nui.nvim',
     config = function()
         require('pomodoro').setup({
