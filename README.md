@@ -66,7 +66,7 @@ For [hoob3rt/lualine.nvim](https://github.com/hoob3rt/lualine.nvim), you can do 
 ```lua
 require('lualine').setup({
     sections = {
-        lualine_c = { 'filename', require('pomodoro').statusline() }
+        lualine_c = { 'filename', require('pomodoro').statusline }
     }
 })
 ```
