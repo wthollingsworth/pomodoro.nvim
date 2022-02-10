@@ -80,6 +80,10 @@ function Pomodoro.stop()
 end
 
 function Pomodoro.setup(tbl)
+    if tbl == nil or #tbl == 0 then
+      return
+    end
+
     if tbl.time_work then
         vim.g.pomodoro_time_work = tbl.time_work
     end
