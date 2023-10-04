@@ -80,7 +80,7 @@ function Pomodoro.stop()
 end
 
 function Pomodoro.setup(tbl)
-    if tbl == nil or #tbl == 0 then
+    if tbl == nil or next(tbl) == nil then
       return
     end
 
