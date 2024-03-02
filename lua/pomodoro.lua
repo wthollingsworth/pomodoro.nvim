@@ -20,9 +20,9 @@ end
 local function pomodoro_time_remaining(duration, start)
     local seconds = duration * 60 - os.difftime(os.time(), start)
     if math.floor(seconds / 60) >= 60 then
-        return os.date('!%0H:%0M:%0S', seconds)
+        return os.date('!%H:%M:%S', seconds)
     else
-        return os.date('!%0M:%0S', seconds)
+        return os.date('!%M:%S', seconds)
     end
 end
 
@@ -81,7 +81,7 @@ end
 
 function Pomodoro.setup(tbl)
     if tbl == nil or next(tbl) == nil then
-      return
+        return
     end
 
     if tbl.time_work then
